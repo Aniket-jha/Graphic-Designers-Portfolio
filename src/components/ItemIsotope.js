@@ -151,7 +151,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
       <div className="box-items portfolio-items">
         {
           LogoWork.map((logo,key)=>(
-            <div className="box-item f-logo">
+            <div key={key} className="box-item f-logo">
         
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">
@@ -168,7 +168,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
         }
         {
           collegeWork?.map((logo,key)=>(
-            <div className="box-item f-logo">
+            <div key={key} className="box-item f-logo">
         
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">
@@ -186,7 +186,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
        
         {
           emailersWork.map((logo,key)=>(
-            <div className="box-item f-emailers">
+            <div key={key} className="box-item f-emailers">
         
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">
@@ -203,7 +203,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
         }
           {
           packagingWork.map((logo,key)=>(
-            <div className="box-item f-packaging">
+            <div key={key} className="box-item f-packaging">
         
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">
