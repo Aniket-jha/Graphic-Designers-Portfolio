@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import useClickOutside from "../../useClickOutside";
-
+import { urlFor } from "../../../utils/client";
 const ImgViews = ({ close, src }) => {
   let domNode = useClickOutside(() => {
     close(false);
@@ -18,7 +18,7 @@ const ImgViews = ({ close, src }) => {
         >
           <div className="mfp-content" ref={domNode}>
             <div className="mfp-iframe-scaler">
-              <img className="mfp-img" src={src} />
+              
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>

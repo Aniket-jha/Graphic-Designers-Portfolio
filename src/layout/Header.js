@@ -17,7 +17,140 @@ const Menu = () => (
     <div className="top-menu hover-masks">
       <div className="top-menu-nav">
         <div className="menu-topmenu-container">
-          <ul className="menu">
+        <ul className="menu">
+            <li className="menu-item menu-item-has-children">
+              <Link href="/">
+                <a>
+                  <span className="mask-lnk">Home</span>
+                  <span className="mask-lnk mask-lnk-hover">Home</span>
+                </a>
+              </Link>
+              <ul className="sub-menu">
+                <li className="menu-item">
+                  <Link href="/">
+                    <a>
+                      <span className="mask-lnk">Home Default</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Default
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_creative">
+                    <a>
+                      <span className="mask-lnk">Home Creative</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Creative
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_slider">
+                    <a>
+                      <span className="mask-lnk">Home Slider</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Slider
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_personal">
+                    <a>
+                      <span className="mask-lnk">Home Personal</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Personal
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_onepage">
+                    <a target="blank">
+                      <span className="mask-lnk">Home OnePage</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home OnePage
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_image">
+                    <a>
+                      <span className="mask-lnk">Home Image</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Image
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/index_video">
+                    <a>
+                      <span className="mask-lnk">Home Video</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Home Video
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-item menu-item-has-children">
+              <Link href="/resume">
+                <a>
+                  <span className="mask-lnk">Resume</span>
+                  <span className="mask-lnk mask-lnk-hover">Resume</span>
+                </a>
+              </Link>
+              <ul className="sub-menu">
+                <li className="menu-item">
+                  <Link href="/resume">
+                    <a>
+                      <span className="mask-lnk">Resume Default</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Resume Default
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/resume_image">
+                    <a>
+                      <span className="mask-lnk">Resume Image</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Resume Image
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link href="/resume_creative">
+                    <a>
+                      <span className="mask-lnk">Resume Creative</span>
+                      <span className="mask-lnk mask-lnk-hover">
+                        Resume Creative
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-item">
+              <Link href="/works">
+                <a>
+                  <span className="mask-lnk">Works</span>
+                  <span className="mask-lnk mask-lnk-hover">Works</span>
+                </a>
+              </Link>
+             
+            </li>
+            
+            
+          </ul> 
+          {/* <ul className="menu">
             <li className="menu-item menu-item-has-children">
               <Link href="/">
                 <a>
@@ -278,7 +411,7 @@ const Menu = () => (
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

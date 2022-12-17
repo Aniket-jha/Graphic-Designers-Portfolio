@@ -1,8 +1,9 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
+import { urlFor } from "../../utils/client";
 import { parallax } from "../utils";
-const ItemIsotope = () => {
+const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
   useEffect(() => {
     parallax();
   }, []);
@@ -86,22 +87,22 @@ const ItemIsotope = () => {
           </div>
           <div className="btn-group">
             <label
-              className={`c-pointer ${activeBtn("f-video")}`}
-              onClick={handleFilterKeyChange("f-video")}
+              className={`c-pointer ${activeBtn("f-logo")}`}
+              onClick={handleFilterKeyChange("f-logo")}
               data-text="Video"
             >
-              <input type="radio" name="fl_radio" defaultValue=".f-video" />
-              Video
+              <input type="radio" name="fl_radio" defaultValue=".f-logo" />
+              Logo
             </label>
           </div>
           <div className="btn-group">
             <label
-              className={`c-pointer ${activeBtn("f-music")}`}
-              onClick={handleFilterKeyChange("f-music")}
+              className={`c-pointer ${activeBtn("f-packaging")}`}
+              onClick={handleFilterKeyChange("f-packaging")}
               data-text="Music"
             >
-              <input type="radio" name="fl_radio" defaultValue=".f-music" />
-              Music
+              <input type="radio" name="fl_radio" defaultValue=".f-packaging" />
+             Packaging
             </label>
           </div>
           <div className="btn-group">
@@ -111,17 +112,17 @@ const ItemIsotope = () => {
               data-text="Links"
             >
               <input type="radio" name="fl_radio" defaultValue=".f-links" />
-              Links
+              Social Media
             </label>
           </div>
           <div className="btn-group">
             <label
-              className={`c-pointer ${activeBtn("f-image")}`}
-              onClick={handleFilterKeyChange("f-image")}
+              className={`c-pointer ${activeBtn("f-emailers")}`}
+              onClick={handleFilterKeyChange("f-emailers")}
               data-text="Image"
             >
-              <input type="radio" name="fl_radio" defaultValue=".f-image" />
-              Image
+              <input type="radio" name="fl_radio" defaultValue=".f-emailers" />
+              Emailers
             </label>
           </div>
           <div className="btn-group">
@@ -131,7 +132,7 @@ const ItemIsotope = () => {
               data-text="Gallery"
             >
               <input type="radio" name="fl_radio" defaultValue=".f-gallery" />
-              Gallery
+              College Work
             </label>
           </div>
           <div className="btn-group">
@@ -148,9 +149,80 @@ const ItemIsotope = () => {
       </div>
       {/* portfolio items */}
       <div className="box-items portfolio-items">
+        {
+          LogoWork.map((logo,key)=>(
+            <div className="box-item f-logo">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+               <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </div>
+          </div>
+        </div>
+          ))
+        }
+        {
+          collegeWork?.map((logo,key)=>(
+            <div className="box-item f-logo">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+               <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </div>
+          </div>
+        </div>
+          ))
+        }
+       
+        {
+          emailersWork.map((logo,key)=>(
+            <div className="box-item f-emailers">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+             <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </div>
+          </div>
+        </div>
+          ))
+        }
+          {
+          packagingWork.map((logo,key)=>(
+            <div className="box-item f-packaging">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+             <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </div>
+          </div>
+        </div>
+          ))
+        }
+
+      </div>
+      {/* <div className="box-items portfolio-items">
         <div className="box-item f-gallery">
-          {" "}
-          {/* add class "animate-to-page" if need animated transition to page and delete target="_blank" rel="noreferrer" */}
+        
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">
               <img src="images/work1.jpg" className="wp-post-image" alt="" />
@@ -371,7 +443,7 @@ const ItemIsotope = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

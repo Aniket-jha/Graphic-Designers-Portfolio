@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-
+import { urlFor } from "../../../utils/client";
 const ImgView = ({ close, imgs }) => {
   const images =
     imgs.length > 0
@@ -12,26 +12,34 @@ const ImgView = ({ close, imgs }) => {
   const [photoIndex, setPhotoIndex] = useState(0);
 
   return (
-    <div className="postion-realtive">
+    <div className="postion-relative">
+     
       <div className="mfp-bg mfp-fade mfp-ready" onClick={() => close()} />
-
+       
       <div
         tabIndex={-1}
         style={{ overflow: "hidden auto" }}
         className="mfp-wrap mfp-gallery mfp-close-btn-in mfp-auto-cursor mfp-fade mfp-ready"
       >
         <div className="mfp-container mfp-s-ready mfp-image-holder">
+       
           <div
             className={`mfp-container mfp-s-ready mfp-iframe-holder mfp-img-container`}
           >
+          
             <div className="mfp-content imgGallery_popup">
+            
               <div className="mfp-iframe-scaler">
+              
                 <div className="img-container">
+                
                   <img
+                   onClick={() => close()}
                     style={{ width: `100%` }}
                     className="mfp-img"
-                    src={images[photoIndex]}
+                    src={urlFor(images[photoIndex])}
                   />
+                  
                   {/* <div className="mfp-bottom-bar">
                     <div className="mfp-title" />
                     <div className="mfp-counter">
@@ -81,9 +89,9 @@ const ImageGallery = () => {
           let img_ = [];
           let parentElement = gallery.closest(".image");
           let mfpHideItem = parentElement.getElementsByClassName("mfp-hide")[0];
-          let img = mfpHideItem.getElementsByTagName("a");
+          let img = mfpHideItem.getElementsByTagName("img");
           for (let i = 0; i < img.length; i++) {
-            const imgHref = img[i].getAttribute("href");
+            const imgHref = img[i].getAttribute("src");
             img_.push(imgHref);
           }
           setImgs(img_);
