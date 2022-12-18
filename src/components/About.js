@@ -41,7 +41,7 @@ e-commerce, fintech, hair care, food, etcetera.
             </ul>
           </div>
           <div className="bts">
-            <a href={personalInfo.resume.asset.url} target="_blank" download className="btn hover-animated">
+            <a href={personalInfo.resume.asset.url} target="_blank" rel="noreferrer"  download className="btn hover-animated">
               <span className="circle" />
               <span className="lnk">Download CV</span>
             </a>
