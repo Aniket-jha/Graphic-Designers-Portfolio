@@ -1,4 +1,6 @@
-const About = () => {
+
+
+const About = ({personalInfo}) => {
   return (
     <div className="section about" id="next_section">
       <div className="content content-box">
@@ -31,15 +33,15 @@ e-commerce, fintech, hair care, food, etcetera.
                 <strong>Address:</strong> Mumbai
               </li>
               <li>
-                <strong>Phone:</strong> +1 256 254 84 56
+                <strong>Phone:</strong> {personalInfo.contactNumber}
               </li>
               <li>
-                <strong>E-mail:</strong> alejandroa@gmail.com
+                <strong>E-mail:</strong>{personalInfo.email}
               </li>
             </ul>
           </div>
           <div className="bts">
-            <a href="#" className="btn hover-animated">
+            <a href={personalInfo.resume.asset.url} target="_blank" download className="btn hover-animated">
               <span className="circle" />
               <span className="lnk">Download CV</span>
             </a>

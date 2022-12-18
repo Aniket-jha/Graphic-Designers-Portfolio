@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="copy">
-        <p>E: alejandroa@gmail.com</p>
-        <p>T: +1 (234) 567 80 98</p>
+        <p>E: kadamchaitrali95@gmail.com</p>
+        <p>T: +91 8652261973</p>
       </div>
       <div className="soc-box">
         <div className="follow-label">Follow Me</div>
@@ -14,8 +14,8 @@ const Footer = () => {
           <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
             <span className="icon fab fa-instagram" />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
-            <span className="icon fab fa-dribbble" />
+          <a target="_blank" rel="noreferrer" href="https://www.behance.net/kadamchait8c32">
+            <span className="icon fab fa-behance" />
           </a>
         </div>
       </div>

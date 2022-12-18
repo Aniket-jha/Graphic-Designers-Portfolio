@@ -6,6 +6,7 @@ import { DefaultPageBanner } from "../src/components/PageBanner";
 import Pricing from "../src/components/Pricing";
 import ResumeSection from "../src/components/ResumeSection";
 import Service from "../src/components/Service";
+
 import {
   CodingSkills,
   DesignSkills,
@@ -15,7 +16,10 @@ import {
 import Team from "../src/components/Team";
 import Testimonials from "../src/components/Testimonials";
 import Layout from "../src/layout/Layout";
-const Resume = () => {
+import { personalInfoQuery } from "../utils/query";
+import { client } from "../utils/client";
+const Resume = ({personalInfo}) => {
+  console.log(personalInfo[0])
   const typingAnimation = [
     `<span class="typed-bread"> <a href="#">Home</a>  / Resume </span>`,
   ];
@@ -24,9 +28,9 @@ const Resume = () => {
       {/* Section Started */}
       <DefaultPageBanner pageName={"Resume"} typingData={typingAnimation} />
       {/* Section About */}
-      <About />
+      <About personalInfo={personalInfo[0]} />
       {/* Section Service */}
-      <Service />
+
       {/* Section Pricing */}
       {/* Section Resume */}
       <ResumeSection />
@@ -35,18 +39,39 @@ const Resume = () => {
       {/* Section Coding Skills */}
       <CodingSkills />
       {/* Section Knowledge Skills */}
-      <KnowledgeSkills />
       {/* Section Interests */}
       <Interests />
       {/* Section Team */}
-      <Team />
       {/* Section Testimonials */}
-      <Testimonials />
+
       {/* Section Clients */}
-      <Clients />
+
       {/* Section Custom Text */}
-      <CustomText />
+    
     </Layout>
   );
 };
+
+
+export const getServerSideProps= async () => {
+  const query = `*[_type == "personalInfo"]{
+    _id,
+    name,
+    email,
+    aboutContent,
+    contactNumber,
+     resume{
+        asset->{
+          _id,
+          url
+        }
+      },
+  }`
+  const personalInfo = await client.fetch(query);
+
+  return{
+    props:{personalInfo}
+  }
+}
+
 export default Resume;

@@ -4,52 +4,35 @@ const Interests = () => {
       <div className="content">
         {/* title */}
         <div className="title">
-          <div className="title_inner">Interests</div>
+          <div className="title_inner">Area Of Interests</div>
         </div>
         {/* interests items */}
         <div className="service-items">
           <div className="service-col">
             <div className="service-item content-box">
-              <div className="icon">
-                <span className="fas fa-baseball-ball" />
-              </div>
-              <div className="name">Basketball</div>
-              <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+             
+              <div className="name">Design Layout</div>
+              
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
-              <div className="icon">
-                <span className="fas fa-campground" />
-              </div>
-              <div className="name">Camping</div>
-              <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+             
+              <div className="name">Typography</div>
+             
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
-              <div className="icon">
-                <span className="fas fa-chess-knight" />
-              </div>
-              <div className="name">Chess</div>
-              <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+              
+              <div className="name">Social Media</div>
+             
             </div>
           </div>
           <div className="service-col">
             <div className="service-item content-box">
-              <div className="icon">
-                <span className="fas fa-headphones" />
-              </div>
-              <div className="name">Music</div>
-              <div className="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+              <div className="name">Branding</div>
+              
             </div>
           </div>
         </div>

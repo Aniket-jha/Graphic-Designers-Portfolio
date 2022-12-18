@@ -9,7 +9,7 @@ const Menu = () => (
           Chaitrali <strong>Kadam</strong>
         </span>
         <span className="mask-lnk mask-lnk-hover">
-          Download <strong>CV</strong>
+         Graphic <strong>Designer</strong>
         </span>
       </a>
     </div>
