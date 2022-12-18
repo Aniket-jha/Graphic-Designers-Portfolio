@@ -36,7 +36,7 @@ const ImgView = ({ close, imgs }) => {
                 
                   <img
                   
-                    style={{ width: `100%`,overflow:"hidden" }}
+                    style={{overflow:"hidden" }}
                     className="mfp-img"
                     src={urlFor(images[photoIndex])}
                   />
