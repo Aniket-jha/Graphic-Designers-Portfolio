@@ -111,13 +111,13 @@ export const CodingSkills = () => {
       <div className="content">
         {/* title */}
         <div className="title">
-          <div className="title_inner">Coding Skills</div>
+          <div className="title_inner">Software Skills</div>
         </div>
         {/* skills items */}
         <div className="skills circles content-box">
           <ul>
             <li>
-              <div className="name">WordPress</div>
+              <div className="name">Adobe Photoshop</div>
               <div className="progress p90">
                 {" "}
                 {/* p90 = 90% circle fill color */}
@@ -132,25 +132,10 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">PHP / MYSQL</div>
-              <div className="progress p75">
-                {" "}
-                {/* p75 = 75% circle fill color */}
-                <div className="percentage">
-                  <span className="percent">75%</span>
-                </div>
-                <span>75%</span>
-                <div className="slice">
-                  <div className="bar"></div>
-                  <div className="fill"></div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="name">Angular / JavaScript</div>
+              <div className="name">Adobe Illustrator</div>
               <div className="progress p85">
                 {" "}
-                {/* p85 = 85% circle fill color */}
+                {/* p75 = 75% circle fill color */}
                 <div className="percentage">
                   <span className="percent">85%</span>
                 </div>
@@ -162,7 +147,22 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">HTML / CSS</div>
+              <div className="name">Figma</div>
+              <div className="progress p75">
+                {" "}
+                {/* p85 = 85% circle fill color */}
+                <div className="percentage">
+                  <span className="percent">75%</span>
+                </div>
+                <span>75%</span>
+                <div className="slice">
+                  <div className="bar"></div>
+                  <div className="fill"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div className="name">Canva</div>
               <div className="progress p95">
                 {" "}
                 {/* p95 = 95% circle fill color */}

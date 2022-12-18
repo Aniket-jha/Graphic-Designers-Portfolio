@@ -127,24 +127,15 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
           </div>
           <div className="btn-group">
             <label
-              className={`c-pointer ${activeBtn("f-gallery")}`}
-              onClick={handleFilterKeyChange("f-gallery")}
+              className={`c-pointer ${activeBtn("f-collegeWork")}`}
+              onClick={handleFilterKeyChange("f-collegeWork")}
               data-text="Gallery"
             >
-              <input type="radio" name="fl_radio" defaultValue=".f-gallery" />
+              <input type="radio" name="fl_radio" defaultValue=".f-collegeWork" />
               College Work
             </label>
           </div>
-          <div className="btn-group">
-            <label
-              className={`c-pointer ${activeBtn("f-content")}`}
-              onClick={handleFilterKeyChange("f-content")}
-              data-text="Content"
-            >
-              <input type="radio" name="fl_radio" defaultValue=".f-content" />
-              Content
-            </label>
-          </div>
+          
         </div>
       </div>
       {/* portfolio items */}
@@ -168,7 +159,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
         }
         {
           collegeWork?.map((logo,key)=>(
-            <div key={key} className="box-item f-logo">
+            <div key={key} className="box-item f-collegeWork">
         
           <div className="image">
             <a href="#gallery-1" className="has-popup-gallery hover-animated">

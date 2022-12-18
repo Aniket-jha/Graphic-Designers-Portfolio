@@ -9,24 +9,26 @@ const About = () => {
         {/* desc */}
         <div className="desc">
           <p>
-            Hello! I’m Daniel Curry. Web designer from USA, California, San
-            Francisco. I have rich experience in web site design and building,
-            also I am good at wordpress. I love to talk with you about our
-            unique.
+            Hello! I’m Chaitrali Kadam. I am fun to be around but also very focused at 
+               the same time. Currently working as a Senior 
+            Designer and leading a team of 5.
+            <br/>
+            Aspiring to grow in the field of Branding, Advertising and Marketing. Have 3 years of experience 
+in designing with Branding projects and Social 
+Media posts for numerous brands which include 
+e-commerce, fintech, hair care, food, etcetera.
           </p>
           <div className="info-list">
             <ul>
               <li>
-                <strong>Age:</strong> 24
+                <strong>Age:</strong> 27
               </li>
               <li>
-                <strong>Residence:</strong> USA
+                <strong>Residence:</strong> India
               </li>
+              
               <li>
-                <strong>Freelance:</strong> Available
-              </li>
-              <li>
-                <strong>Address:</strong> San Francisco
+                <strong>Address:</strong> Mumbai
               </li>
               <li>
                 <strong>Phone:</strong> +1 256 254 84 56

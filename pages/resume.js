@@ -28,13 +28,10 @@ const Resume = () => {
       {/* Section Service */}
       <Service />
       {/* Section Pricing */}
-      <Pricing />
       {/* Section Resume */}
       <ResumeSection />
       {/* Section Design Skills */}
-      <DesignSkills />
-      {/* Section Languages Skills */}
-      <LanguagesSkills />
+     
       {/* Section Coding Skills */}
       <CodingSkills />
       {/* Section Knowledge Skills */}

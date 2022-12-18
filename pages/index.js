@@ -14,9 +14,9 @@ const Index = () => {
           <div className="vertical-center">
             <div className="started-content">
               <h1 className="h-title">
-                Hello, {`I’m`} <strong>Alejandro Abeyta</strong>, UX/UI Designer
+                Hello, {`I’m`} <strong>Chaitrali Kadam</strong>, Senior Graphic Designer
                 and <br />
-                Front-end Developer Based in San Francisco.
+                with 3+ years work experience based out of Mumbai, India.
               </h1>
               <TypingAnimation extraClassName={"h-subtitle"} />
               <span className="typed-subtitle" />

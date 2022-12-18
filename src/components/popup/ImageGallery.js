@@ -18,6 +18,7 @@ const ImgView = ({ close, imgs }) => {
        
       <div
         tabIndex={-1}
+       onClick={() => close()}
         style={{ overflow: "hidden auto" }}
         className="mfp-wrap mfp-gallery mfp-close-btn-in mfp-auto-cursor mfp-fade mfp-ready"
       >
@@ -34,8 +35,8 @@ const ImgView = ({ close, imgs }) => {
                 <div className="img-container">
                 
                   <img
-                   onClick={() => close()}
-                    style={{ width: `100%` }}
+                  
+                    style={{ width: `100%`,overflow:"hidden" }}
                     className="mfp-img"
                     src={urlFor(images[photoIndex])}
                   />

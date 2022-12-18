@@ -11,27 +11,32 @@ const ResumeSection = () => {
             {/* resume items */}
             <div className="resume-items">
               <div className="resume-item content-box active">
-                <div className="date">2013 - Present</div>
-                <div className="name">Art Director - Facebook Inc.</div>
+                <div className="date">April 2022 - Present</div>
+                <div className="name">Sernior Graphic Designer - One Impact.</div>
                 <div className="text">
-                  Collaborate with creative and development teams on the
-                  execution of ideas.
+                Leading a team of 5.Working on various brands creating social 
+media post, also worked on explainer video 
+projects.
                 </div>
               </div>
               <div className="resume-item content-box">
-                <div className="date">2011 - 2012</div>
-                <div className="name">Front-End Developer - Google Inc.</div>
+                <div className="date">Jan 2021 - March 2022</div>
+                <div className="name">Junior Graphic Designer - One Impact.</div>
                 <div className="text">
-                  Monitored technical aspects of the front-end delivery for
-                  projects.
+                  Developed Asthethic Design
+Visualization, ideation, Typography, Brand 
+guidelines.
                 </div>
               </div>
               <div className="resume-item content-box">
-                <div className="date">2009 - 2010</div>
-                <div className="name">Senior Developer - ABC Inc.</div>
+                <div className="date">June 2019 - Nov 2020</div>
+                <div className="name"> Junior Graphic Designer - Bubble Design & Visual 
+Communication</div>
                 <div className="text">
-                  Optimize your website and apps performance using latest
-                  technology.
+                 Developed creative visual designs, vector 
+art, design elements, fonts for branding 
+projects from various industries including 
+Food, Fashion and Stationery products.
                 </div>
               </div>
             </div>
@@ -44,29 +49,19 @@ const ResumeSection = () => {
             {/* resume items */}
             <div className="resume-items">
               <div className="resume-item content-box">
-                <div className="date">2006 - 2008</div>
-                <div className="name">Art University - New York</div>
+                <div className="name">L.S. Raheja school of art</div>
                 <div className="text">
-                  Bachelors Degree in Computer Science ABC Technical Institute,
-                  Jefferson, Missouri.
+                 Foundation, Elementatry,
+                Intermediate, Advance
                 </div>
               </div>
               <div className="resume-item content-box">
-                <div className="date">2005 - 2006</div>
-                <div className="name">Programming Course - Paris</div>
+                <div className="name">J.K. Academy of art and design [18-19]</div>
                 <div className="text">
-                  Coursework - Git, WordPress, Javascript, iOS, Android, CSS,
-                  and JavaScript.
+                  Diploma course in Commercial Arts
                 </div>
               </div>
-              <div className="resume-item content-box">
-                <div className="date">2004 - 2005</div>
-                <div className="name">Web Design Course - London</div>
-                <div className="text">
-                  Converted Photoshop layouts to web pages using HTML, CSS, and
-                  JavaScript.
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
