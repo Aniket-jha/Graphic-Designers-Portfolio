@@ -6,7 +6,8 @@ const ItemIsotope = dynamic(() => import("../src/components/ItemIsotope"), {
   ssr: false,
 });
 
-const Works = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
+const Works = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork}) => {
+  console.log(socialMediaWork)
   const typingAnimation = [
     "<span class='typed-bread'><a href='#'>Home</a> / Works</span>",
   ];
@@ -15,7 +16,7 @@ const Works = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
       <DefaultPageBanner pageName={"works"} typingData={typingAnimation} />
       <div className="section works" id="next_section">
         <div className="content">
-          <ItemIsotope LogoWork={LogoWork} collegeWork={collegeWork} packagingWork={packagingWork} emailersWork={emailersWork} />
+          <ItemIsotope LogoWork={LogoWork} projectsWork={projectsWork} socialMediaWork={socialMediaWork} collegeWork={collegeWork} packagingWork={packagingWork} emailersWork={emailersWork} />
           <div className="clear" />
         </div>
       </div>
@@ -32,8 +33,12 @@ export const getServerSideProps= async () => {
   const packagingWork = await client.fetch(packagingQuery);
   const collegeQuery = '*[_type == "collegeWork"] ';
   const collegeWork = await client.fetch(collegeQuery);
+  const socialMediaQuery = '*[_type == "socialMedia"] ';
+  const socialMediaWork = await client.fetch(socialMediaQuery);
+  const projectsQuery = '*[_type == "projects"] ';
+  const projectsWork = await client.fetch(projectsQuery);
   return{
-    props:{LogoWork,emailersWork,packagingWork,collegeWork}
+    props:{LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork}
   }
 }
 

@@ -57,6 +57,13 @@ html {
   background: #4bffa5;
   transition: 1s all;
 }
+.close-btn{
+  position: absolute;
+   top:-200px;
+    right:-500px;
+    cursor: pointer;
+    font-size: 35px;
+}
 
 /* image popup */
 .popup-container {
@@ -71,7 +78,7 @@ img.mfp-img {
   padding: 0 !important;
   top: 0%;
   left: -250px;
-  transform: translate(0%, -5%);
+  transform: translate(0%, -2%);
 }
 .mfp-img-container .mfp-content {
   max-width: 400px !important;

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { urlFor } from "../../utils/client";
 import { parallax } from "../utils";
-const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
+const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork}) => {
   useEffect(() => {
     parallax();
   }, []);
@@ -107,11 +107,21 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
           </div>
           <div className="btn-group">
             <label
-              className={`c-pointer ${activeBtn("f-links")}`}
-              onClick={handleFilterKeyChange("f-links")}
+              className={`c-pointer ${activeBtn("f-projects")}`}
+              onClick={handleFilterKeyChange("f-projects")}
+              data-text="Music"
+            >
+              <input type="radio" name="fl_radio" defaultValue=".f-projects" />
+              Projects
+            </label>
+          </div>
+          <div className="btn-group">
+            <label
+              className={`c-pointer ${activeBtn("f-social")}`}
+              onClick={handleFilterKeyChange("f-social")}
               data-text="Links"
             >
-              <input type="radio" name="fl_radio" defaultValue=".f-links" />
+              <input type="radio" name="fl_radio" defaultValue=".f-social" />
               Social Media
             </label>
           </div>
@@ -140,6 +150,40 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork}) => {
       </div>
       {/* portfolio items */}
       <div className="box-items portfolio-items">
+        {
+          socialMediaWork.map((logo,key)=>(
+            <div key={key} className="box-item f-social">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.startImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+              {logo.mainImage?.map((image,key)=>(<img src={urlFor(image.asset)} className="" alt="" />))
+            }
+            
+            </div>
+          </div>
+        </div>
+          ))
+        }
+         {
+          projectsWork.map((logo,key)=>(
+            <div key={key} className="box-item f-projects">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+                <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            </div>
+          </div>
+        </div>
+          ))
+        }
         {
           LogoWork.map((logo,key)=>(
             <div key={key} className="box-item f-logo">
