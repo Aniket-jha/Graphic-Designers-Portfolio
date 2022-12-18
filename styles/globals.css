@@ -9,6 +9,19 @@ html {
   display: block;
 }
 
+@media (max-width: 450px){
+  img.mfp-img {
+      box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+      position: absolute;
+      /* max-height: 392px; */
+      width: 100% !important;
+      padding: 0 !important;
+      top: 0%;
+      left: 0px !important;
+      transform: translate(0%, -5%);
+    }
+}
+
 @media (max-width: 1199px) {
   .header.active {
     padding-top: 4vw;
