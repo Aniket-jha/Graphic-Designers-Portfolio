@@ -160,7 +160,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
             
             </a>
             <div id="gallery-1" className="mfp-hide">
-              {logo.mainImage?.map((image,key)=>(<img src={urlFor(image.asset)} className="" alt="" />))
+              {logo.mainImage?.map((image,key)=>(<img key={key} src={urlFor(image.asset)} className="" alt="" />))
             }
             
             </div>
