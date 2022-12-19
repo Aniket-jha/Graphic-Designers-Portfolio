@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { urlFor } from "../../utils/client";
 import { parallax } from "../utils";
-const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork,videosWork}) => {
+const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,collegeWork,socialMediaWork,projectsWork,videosWork}) => {
   useEffect(() => {
     parallax();
   }, []);
@@ -145,6 +145,16 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
             Videos
             </label>
           </div>
+            <div className="btn-group">
+            <label
+              className={`c-pointer ${activeBtn("f-publishing")}`}
+              onClick={handleFilterKeyChange("f-publishing")}
+              data-text="Image"
+            >
+              <input type="radio" name="fl_radio" defaultValue=".f-publishing" />
+            Publishing
+            </label>
+          </div>
           <div className="btn-group">
             <label
               className={`c-pointer ${activeBtn("f-collegeWork")}`}
@@ -178,6 +188,22 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
         </div>
           ))
         } 
+         {
+          publishingWork.map((logo,key)=>(
+            <div key={key} className="box-item f-publishing">
+        
+          <div className="image">
+            <a href="#gallery-1" className="has-popup-gallery hover-animated">
+              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            
+            </a>
+            <div id="gallery-1" className="mfp-hide">
+                <img src={urlFor(logo.workImage.asset)} className="" alt="" />
+            </div>
+          </div>
+        </div>
+          ))
+        }
          {
           projectsWork.map((logo,key)=>(
             <div key={key} className="box-item f-projects">
