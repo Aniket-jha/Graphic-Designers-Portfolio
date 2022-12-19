@@ -12,20 +12,21 @@ const ResumeSection = () => {
             <div className="resume-items">
               <div className="resume-item content-box active">
                 <div className="date">April 2022 - Present</div>
-                <div className="name">Sernior Graphic Designer - One Impact.</div>
+                <div className="name">Senior Graphic Designer - One Impact.</div>
                 <div className="text">
                 Leading a team of 5.Working on various brands creating social 
 media post, also worked on explainer video 
-projects.
+projects.<br/>
+   Developed Asthethic Design
+Visualization, ideation, Typography, Brand 
+guidelines.
                 </div>
               </div>
               <div className="resume-item content-box">
                 <div className="date">Jan 2021 - March 2022</div>
                 <div className="name">Junior Graphic Designer - One Impact.</div>
                 <div className="text">
-                  Developed Asthethic Design
-Visualization, ideation, Typography, Brand 
-guidelines.
+               
                 </div>
               </div>
               <div className="resume-item content-box">
@@ -52,14 +53,22 @@ Food, Fashion and Stationery products.
                 <div className="name">L.S. Raheja school of art</div>
                 <div className="text">
                  Foundation, Elementatry,
-                Intermediate, Advance
+                Intermediate, Advance<br/>(Diploma in Visual and Communication)
                 </div>
               </div>
               <div className="resume-item content-box">
                 <div className="name">J.K. Academy of art and design [18-19]</div>
                 <div className="text">
-                  Diploma course in Commercial Arts
+                  Diploma course <br/>(Diploma in Visual and Communication)
                 </div>
+              </div>
+              <div className="resume-item content-box">
+                <div className="name">H.S.C [2011 - 2012]</div>
+                
+              </div>
+              <div className="resume-item content-box">
+                <div className="name">S.S.C [2009 - 2010]</div>
+               
               </div>
               
             </div>

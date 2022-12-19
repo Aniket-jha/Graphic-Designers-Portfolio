@@ -27,13 +27,13 @@ const Works = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,
 export const getServerSideProps= async () => {
   const query = '*[_type == "logo"] ';
   const LogoWork = await client.fetch(query);
-  const emailerQuery = '*[_type == "emailers"] ';
+  const emailerQuery = '*[_type == "emailers"] | order(_createdAt desc)';
   const emailersWork = await client.fetch(emailerQuery);
   const packagingQuery = '*[_type == "packaging"] ';
   const packagingWork = await client.fetch(packagingQuery);
   const collegeQuery = '*[_type == "collegeWork"] ';
   const collegeWork = await client.fetch(collegeQuery);
-  const socialMediaQuery = '*[_type == "socialMedia"] ';
+  const socialMediaQuery = '*[_type == "socialMedia"] | order(createdAt desc, _updatedAt desc)  ';
   const socialMediaWork = await client.fetch(socialMediaQuery);
   const projectsQuery = '*[_type == "projects"] ';
   const projectsWork = await client.fetch(projectsQuery);

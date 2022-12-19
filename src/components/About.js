@@ -14,11 +14,11 @@ const About = ({personalInfo}) => {
             Hello! I’m Chaitrali Kadam. I am fun to be around but also very focused at 
                the same time. Currently working as a Senior 
             Designer and leading a team of 5.
-            <br/>
-            Aspiring to grow in the field of Branding, Advertising and Marketing. Have 3 years of experience 
+            <br/><br/>
+            Aspiring to grow in the field of Branding, Advertising and Marketing.<br/> Have 3 years of experience 
 in designing with Branding projects and Social 
 Media posts for numerous brands which include 
-e-commerce, fintech, hair care, food, etcetera.
+E-Commerce, Fintech, Hair Care, Food, Fashion, News
           </p>
           <div className="info-list">
             <ul>

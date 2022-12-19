@@ -35,7 +35,7 @@ const Resume = ({personalInfo}) => {
       {/* Section Resume */}
       <ResumeSection />
       {/* Section Design Skills */}
-     
+      <LanguagesSkills/>
       {/* Section Coding Skills */}
       <CodingSkills />
       {/* Section Knowledge Skills */}

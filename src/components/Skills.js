@@ -69,35 +69,28 @@ export const LanguagesSkills = () => {
             <li>
               <div className="name">English</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "90%" }}>
-                  <span className="percent">90%</span>
+                <div className="percentage" style={{ width: "75%" }}>
+                  <span className="percent">75%</span>
                 </div>
               </div>
             </li>
             <li>
-              <div className="name">German</div>
+              <div className="name">Hindi</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "70%" }}>
-                  <span className="percent">70%</span>
+                <div className="percentage" style={{ width: "80%" }}>
+                  <span className="percent">80%</span>
                 </div>
               </div>
             </li>
             <li>
-              <div className="name">Italian</div>
+              <div className="name">Marathi</div>
               <div className="progress">
-                <div className="percentage" style={{ width: "55%" }}>
-                  <span className="percent">55%</span>
+                <div className="percentage" style={{ width: "95%" }}>
+                  <span className="percent">95%</span>
                 </div>
               </div>
             </li>
-            <li>
-              <div className="name">French</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "85%" }}>
-                  <span className="percent">85%</span>
-                </div>
-              </div>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -162,14 +155,14 @@ export const CodingSkills = () => {
               </div>
             </li>
             <li>
-              <div className="name">Canva</div>
+              <div className="name">Indesign</div>
               <div className="progress p95">
                 {" "}
                 {/* p95 = 95% circle fill color */}
                 <div className="percentage">
                   <span className="percent">95%</span>
                 </div>
-                <span>95%</span>
+                <span>75%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>

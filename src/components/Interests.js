@@ -35,6 +35,24 @@ const Interests = () => {
               
             </div>
           </div>
+           <div className="service-col">
+            <div className="service-item content-box">
+              <div className="name">Markeing</div>
+              
+            </div>
+          </div>
+           <div className="service-col">
+            <div className="service-item content-box">
+              <div className="name">Advestising</div>
+              
+            </div>
+          </div>
+            <div className="service-col">
+            <div className="service-item content-box">
+              <div className="name">Space Design Decor</div>
+              
+            </div>
+          </div>
         </div>
         <div className="clear" />
       </div>
