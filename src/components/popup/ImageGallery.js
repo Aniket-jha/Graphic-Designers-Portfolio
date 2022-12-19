@@ -33,7 +33,7 @@ const ImgView = ({ close, imgs }) => {
               <div className="mfp-iframe-scaler">
               
                 <div className="img-container">
-                 <div onClick={() => close()} className="close-btn" ><span>X</span></div>
+                 <div onClick={() => close()} className="close-btn " ><span>X</span></div>
                   <img
                   
                     style={{overflow:"hidden" }}
