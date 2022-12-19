@@ -18,6 +18,7 @@ import Testimonials from "../src/components/Testimonials";
 import Layout from "../src/layout/Layout";
 import { personalInfoQuery } from "../utils/query";
 import { client } from "../utils/client";
+import ContactSection from "../src/components/ContactSection";
 const Resume = ({personalInfo}) => {
   console.log(personalInfo[0])
   const typingAnimation = [
@@ -35,12 +36,14 @@ const Resume = ({personalInfo}) => {
       {/* Section Resume */}
       <ResumeSection />
       {/* Section Design Skills */}
-      <LanguagesSkills/>
+     
       {/* Section Coding Skills */}
       <CodingSkills />
       {/* Section Knowledge Skills */}
       {/* Section Interests */}
       <Interests />
+       <LanguagesSkills/>
+       <ContactSection/>
       {/* Section Team */}
       {/* Section Testimonials */}
 

@@ -68,27 +68,15 @@ export const LanguagesSkills = () => {
           <ul>
             <li>
               <div className="name">English</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "75%" }}>
-                  <span className="percent">75%</span>
-                </div>
-              </div>
+              
             </li>
             <li>
               <div className="name">Hindi</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "80%" }}>
-                  <span className="percent">80%</span>
-                </div>
-              </div>
+              
             </li>
             <li>
               <div className="name">Marathi</div>
-              <div className="progress">
-                <div className="percentage" style={{ width: "95%" }}>
-                  <span className="percent">95%</span>
-                </div>
-              </div>
+             
             </li>
            
           </ul>
