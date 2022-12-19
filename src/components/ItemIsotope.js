@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { urlFor } from "../../utils/client";
 import { parallax } from "../utils";
-const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork}) => {
+const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMediaWork,projectsWork,videosWork}) => {
   useEffect(() => {
     parallax();
   }, []);
@@ -137,6 +137,16 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
           </div>
           <div className="btn-group">
             <label
+              className={`c-pointer ${activeBtn("f-videos")}`}
+              onClick={handleFilterKeyChange("f-videos")}
+              data-text="Image"
+            >
+              <input type="radio" name="fl_radio" defaultValue=".f-videos" />
+            Videos
+            </label>
+          </div>
+          <div className="btn-group">
+            <label
               className={`c-pointer ${activeBtn("f-collegeWork")}`}
               onClick={handleFilterKeyChange("f-collegeWork")}
               data-text="Gallery"
@@ -149,7 +159,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
         </div>
       </div>
       {/* portfolio items */}
-      <div className="box-items portfolio-items">
+       <div className="box-items portfolio-items">
         {
           socialMediaWork.map((logo,key)=>(
             <div key={key} className="box-item f-social">
@@ -167,7 +177,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
           </div>
         </div>
           ))
-        }
+        } 
          {
           projectsWork.map((logo,key)=>(
             <div key={key} className="box-item f-projects">
@@ -201,7 +211,7 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
         </div>
           ))
         }
-        {
+         {
           collegeWork?.map((logo,key)=>(
             <div key={key} className="box-item f-collegeWork">
         
@@ -249,6 +259,23 @@ const ItemIsotope = ({LogoWork,emailersWork,packagingWork,collegeWork,socialMedi
              <img src={urlFor(logo.workImage.asset)} className="" alt="" />
             
             </div>
+          </div>
+        </div>
+          ))
+        }
+         {
+          videosWork.map((logo,key)=>(
+            <div key={key} className="box-item f-videos">
+        
+          <div className="image">
+            <a href="#gallery-1" className="">
+              <video width="100%" height="100%" controls>
+            <source src={logo.video.asset.url} type="video/mp4" />
+ 
+                </video>
+            
+            </a>
+           
           </div>
         </div>
           ))
