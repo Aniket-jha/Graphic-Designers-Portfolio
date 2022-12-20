@@ -63,6 +63,7 @@ export const getServerSideProps= async () => {
     email,
     aboutContent,
     contactNumber,
+    profileImage,
      resume{
         asset->{
           _id,

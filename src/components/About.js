@@ -1,3 +1,4 @@
+import { urlFor } from "../../utils/client";
 
 
 const About = ({personalInfo}) => {
@@ -6,7 +7,7 @@ const About = ({personalInfo}) => {
       <div className="content content-box">
         {/* image */}
         <div className="image">
-          <img src="images/man_r.jpg" alt="" />
+          <img src={urlFor(personalInfo.profileImage.asset)} alt="" />
         </div>
         {/* desc */}
         <div className="desc">
