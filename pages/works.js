@@ -40,7 +40,7 @@ export const getServerSideProps= async () => {
   const projectsQuery = '*[_type == "projects"] ';
   const projectsWork = await client.fetch(projectsQuery);
    const videosQuery = `*[_type == "videos"]{
-    
+    videoThumbnail,
      video{
         asset->{
           _id,

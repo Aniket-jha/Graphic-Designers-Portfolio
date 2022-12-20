@@ -295,7 +295,7 @@ const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,college
         
           <div className="image">
             <a href="#gallery-1" className="">
-              <video width="100%" height="100%" controls>
+              <video width="100%" poster={urlFor(logo.videoThumbnail?.asset)} height="100%" controls>
             <source src={logo.video.asset.url} type="video/mp4" />
  
                 </video>
