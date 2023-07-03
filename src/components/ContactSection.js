@@ -17,7 +17,7 @@ const ContactSection = () => {
                   <span className="fas fa-phone" />
                 </div>
                 <div className="name">Phone</div>
-                <div className="text">+91 8652261973</div>
+                <div className="text">+971 52 212 6658</div>
               </div>
             </div>
             <div className="service-col">

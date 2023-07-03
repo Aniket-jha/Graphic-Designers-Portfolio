@@ -13,25 +13,23 @@ const About = ({personalInfo}) => {
         <div className="desc">
           <p>
             Hello! I’m Chaitrali Kadam. I am fun to be around but also very focused at 
-               the same time. Currently working as a Senior 
-            Designer and leading a team of 5.
+               the same time. Currently Working As a Senior Graphic designer in Dubai
             <br/><br/>
-            Aspiring to grow in the field of Branding, Advertising and Marketing.<br/> Have 3 years of experience 
-in designing with Branding projects and Social 
-Media posts for numerous brands which include 
-E-Commerce, Fintech, Hair Care, Food, Fashion, News
+            Aspiring to grow in the field of Advertising, Marketing, & Branding.
+Having 4 years of experience in Designing with Various projects which includes Branding, Merchandise, TVC'S,  & Social Media numerous brands which include E- Commerce, Fintech, Hair Care, Food, Fashion, FMCG, News.
           </p>
           <div className="info-list">
             <ul>
               <li>
-                <strong>Age:</strong> 27
+                <strong>Age:</strong> 28
               </li>
               <li>
-                <strong>Residence:</strong> India
+                <strong>Residence:</strong> Dubai
               </li>
               
               <li>
-                <strong>Address:</strong> Mumbai
+                <strong>Address:</strong>Ewan Residences, Dubai Investment Park
+Residence Dubai
               </li>
               <li>
                 <strong>Phone:</strong> {personalInfo.contactNumber}

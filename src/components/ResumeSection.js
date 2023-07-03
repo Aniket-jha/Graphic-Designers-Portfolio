@@ -11,7 +11,14 @@ const ResumeSection = () => {
             {/* resume items */}
             <div className="resume-items">
               <div className="resume-item content-box active">
-                <div className="date">April 2022 - Present</div>
+                <div className="date">May 2023 - Present</div>
+                <div className="name">Senior Graphic Designer - Adedge Advertising & Management</div>
+                <div className="text">
+              
+                </div>
+              </div>
+               <div className="resume-item content-box active">
+                <div className="date">April 2022 - May 2023</div>
                 <div className="name">Senior Graphic Designer - One Impact.</div>
                 <div className="text">
                 Leading a team of 5.Working on various brands creating social 
