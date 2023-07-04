@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="copy">
         <p>E: kadamchaitrali95@gmail.com</p>
-        <p>T: +91 8652261973</p>
+        <p>T: : +971 52 212 6658</p>
       </div>
       <div className="soc-box">
         <div className="follow-label">Follow Me</div>
