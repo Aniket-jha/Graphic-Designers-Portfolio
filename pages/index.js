@@ -16,7 +16,7 @@ const Index = () => {
               <h1 className="h-title">
                 Hello, {`I’m`} <strong>Chaitrali Kadam</strong>, Senior Graphic Designer
                 and <br />
-                with 3+ years work experience based out of Mumbai, India.
+                with 3+ years work experience based out of Mumbai currently situated in Dubai.
               </h1>
               <TypingAnimation extraClassName={"h-subtitle"} />
               <span className="typed-subtitle" />

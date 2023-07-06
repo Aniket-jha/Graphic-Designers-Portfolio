@@ -28,8 +28,7 @@ Having 4 years of experience in Designing with Various projects which includes B
               </li>
               
               <li>
-                <strong>Address:</strong>Ewan Residences, Dubai Investment Park
-Residence Dubai
+                <strong>Address:</strong>Ewan Residences, Dubai Investment Park - Dubai
               </li>
               <li>
                 <strong>Phone:</strong> {personalInfo.contactNumber}

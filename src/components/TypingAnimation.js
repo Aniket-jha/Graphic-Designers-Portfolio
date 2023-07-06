@@ -9,7 +9,7 @@ const TypingAnimation = ({ typingData, extraClassName }) => {
       strings: typingData
         ? typingData
         : [
-            "I am a  <strong>Designer</strong>",
+            "I am a  <strong>Graphic Visualizer</strong>",
             "Who develops <strong>Asthetic Design</strong>",
             " & I love <strong>Typography</strong>",
           ], // Strings to display
