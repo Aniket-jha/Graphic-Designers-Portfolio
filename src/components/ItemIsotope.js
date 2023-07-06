@@ -10,7 +10,7 @@ const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,college
 
   // Isotope
   const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("f-social");
+  const [filterKey, setFilterKey] = useState("box-item");
   useEffect(() => {
     setTimeout(() => {
       isotope.current = new Isotope(".portfolio-items", {
@@ -75,7 +75,7 @@ const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,college
       {/* portfolio filter */}
       <div className="filter-menu content-box">
         <div className="filters">
-          {/* <div className="btn-group">
+          <div className="btn-group">
             <label
               data-text="All"
               className={`c-pointer ${activeBtn("box-item")}`}
@@ -84,7 +84,7 @@ const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,college
               <input type="radio" name="fl_radio" defaultValue=".box-item" />
               All
             </label>
-          </div> */}
+          </div>
           <div className="btn-group">
             <label
               className={`c-pointer ${activeBtn("f-logo")}`}
