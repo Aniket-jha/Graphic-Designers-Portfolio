@@ -180,7 +180,7 @@ const ItemIsotope = ({LogoWork,emailersWork,publishingWork,packagingWork,college
             
             </a>
             <div id="gallery-1" className="mfp-hide">
-             <img src={urlFor(logo.startImage.asset)} className="" alt="" />
+      {  logo.mainImage && logo.mainImage.map((image)=> <img src={urlFor(image)} className="" alt="" />)     }
             
             </div>
           </div>
